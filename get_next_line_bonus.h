@@ -16,6 +16,12 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+# ifndef MAX_FD
+#  define MAX_FD 1024
+# endif
 # define READ 1
 # define READ_EOF 0
 # define READ_ERROR -1
